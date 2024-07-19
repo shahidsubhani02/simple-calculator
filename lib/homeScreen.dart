@@ -2,14 +2,14 @@ import 'package:calculator/components/my_button.dart';
 import 'package:flutter/material.dart';
 import 'package:math_expressions/math_expressions.dart';
 
-class homePage extends StatefulWidget {
-  const homePage({super.key});
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
 
   @override
-  State<homePage> createState() => _homePageState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _homePageState extends State<homePage> {
+class _HomePageState extends State<HomePage> {
   var userInput = '';
   var answer = '';
   @override
@@ -28,11 +28,13 @@ class _homePageState extends State<homePage> {
                     children: [
                       Text(
                         userInput.toString(),
-                        style: TextStyle(fontSize: 30, color: Colors.white),
+                        style:
+                            const TextStyle(fontSize: 30, color: Colors.white),
                       ),
                       Text(
                         answer.toString(),
-                        style: TextStyle(fontSize: 40, color: Colors.white30),
+                        style: const TextStyle(
+                            fontSize: 40, color: Colors.white30),
                       ),
                     ],
                   ),
@@ -267,7 +269,7 @@ class _homePageState extends State<homePage> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               )
             ],
